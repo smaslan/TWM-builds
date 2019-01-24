@@ -11,13 +11,14 @@ TWM is a transparent, metrology grade measurement system for traceable measureme
 This git contains only builds of the TWM tool, which can be found at another git: [smaslan/TWM](https://github.com/smaslan/TWM) 
 
 
-## downloads
+## Downloads
 
-[V1.3.0.0 (built with: 3458A, NI5922, Soundcard), 2018.08.23 (ZIP file)](./builds/TWM-1.3.0.0-full.zip)
+Select version built only with required digitizers support to prevent installing of unnecessary instrument drivers:
 
-[V1.5.0.0 (built with: 3458A, NI5922, Soundcard), 2019.01.24 (ZIP file)](./builds/TWM-1.5.0.0-full.zip)
+- [V1.5.0.0 (built with: 3458A, NI5922, Soundcard), 2019.01.24 (ZIP file)](./builds/TWM-1.5.0.0-full.zip)
+- [V1.5.0.0 (built with: 3458A, Soundcard), 2019.01.24 (ZIP file)](./builds/TWM-1.5.0.0-visa.zip)
+- [V1.3.0.0 (built with: 3458A, NI5922, Soundcard), 2018.08.23 (ZIP file)](./builds/TWM-1.3.0.0-full.zip)
 
-[V1.5.0.0 (built with: 3458A, Soundcard), 2019.01.24 (ZIP file)](./builds/TWM-1.5.0.0-visa.zip)
 
 
 ## License
