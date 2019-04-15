@@ -13,6 +13,12 @@ This git contains only builds of the TWM tool, which can be found at another git
 
 ## Major changes
 
+- V1.6.1.0, 2019.04.15:
+  - Minor fixes in correction editors.
+  - GUI should work properly when Windows uses decimal comma separator.
+  - Algorithm TWM-WFFT minor fix for differential input (was returning complex values in some cases).
+  - DirectSound driver fixed.
+  
 - V1.6.0.0, 2019.04.04:
   - Fixed 5922 timestamp errors for streaming mode and new selector for different reference clock sources.
   - GNU Octave configuration now includes simple package assistant to avoid using the ".octaverc" startup file.
@@ -24,6 +30,8 @@ This git contains only builds of the TWM tool, which can be found at another git
 
 Select version built only with required digitizers support to prevent installing of unnecessary instrument drivers:
 
+- [V1.6.1.0 (built with: 3458A, NI5922, Soundcard), 2019.04.15 (ZIP file)](./builds/TWM-1.6.1.0-full.zip)
+- [V1.6.1.0 (built with: 3458A, Soundcard), 2019.04.15 (ZIP file)](./builds/TWM-1.6.1.0-visa.zip)
 - [V1.6.0.0 (built with: 3458A, NI5922, Soundcard), 2019.04.04 (ZIP file)](./builds/TWM-1.6.0.0-full.zip)
 - [V1.6.0.0 (built with: 3458A, Soundcard), 2019.04.04 (ZIP file)](./builds/TWM-1.6.0.0-visa.zip)
 - [V1.5.0.0 (built with: 3458A, NI5922, Soundcard), 2019.01.24 (ZIP file)](./builds/TWM-1.5.0.0-full.zip)
