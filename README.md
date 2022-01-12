@@ -13,6 +13,19 @@ This git contains only builds of the TWM tool, which can be found at another git
 
 ## Major changes
 
+- V1.7.5.0, 2022.01.12:
+  - Conversion to LabVIEW 2020.
+  - Implemented experimental time-multiplexing for digitizers with support of timestamping and emulated timestamping for 3458A.
+  - Added partial support for Fluke 8588A (depends in FW version of F8588A).
+  - Added few more specific sample clock generators for 3458A.
+  - Added basic support for cDAQ NI9238 module.
+  - Added basic support for Keysight DSOs (tested with DSOS0604)/  
+  - Added capability for parallel processing of TWM records (very experimental, not properly tested).
+  - Minor bug fixes in algorithms (improved performance at some fringe conditions).
+  - Added new algorithm TWM-LowZ for low impedance measurements and voltage ratio measurements.
+  - Many small fixes and improvements in TWM GUI.
+  - :warning: This version was not properly validated! Although it is being intensively used, there might be some critical bugs.
+
 - V1.6.1.0, 2019.04.15:
   - Minor fixes in correction editors.
   - GUI should work properly when Windows uses decimal comma separator.
@@ -30,6 +43,7 @@ This git contains only builds of the TWM tool, which can be found at another git
 
 Select version built only with required digitizers support to prevent installing of unnecessary instrument drivers:
 
+- [V1.7.5.0 (built with: all*), 2022.01.12 (ZIP file)](./builds/TWM-1.7.5.0-full.zip)
 - [V1.6.1.0 (built with: 3458A, NI5922, Soundcard), 2019.04.15 (ZIP file)](./builds/TWM-1.6.1.0-full.zip)
 - [V1.6.1.0 (built with: 3458A, Soundcard), 2019.04.15 (ZIP file)](./builds/TWM-1.6.1.0-visa.zip)
 - [V1.6.0.0 (built with: 3458A, NI5922, Soundcard), 2019.04.04 (ZIP file)](./builds/TWM-1.6.0.0-full.zip)
@@ -38,6 +52,7 @@ Select version built only with required digitizers support to prevent installing
 - [V1.5.0.0 (built with: 3458A, Soundcard), 2019.01.24 (ZIP file)](./builds/TWM-1.5.0.0-visa.zip)
 - [V1.3.0.0 (built with: 3458A, NI5922, Soundcard), 2018.08.23 (ZIP file)](./builds/TWM-1.3.0.0-full.zip)
 
+\* Note: Since version V1.7.5.0, the build always contains several executables built for various drivers. Simply run the one required.
 
 
 ## License
