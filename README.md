@@ -19,12 +19,12 @@ This git contains only builds of the TWM tool, which can be found at another git
   - Added partial support for Fluke 8588A (depends in FW version of F8588A).
   - Added few more specific sample clock generators for 3458A.
   - Added basic support for cDAQ NI9238 module.
-  - Added basic support for Keysight DSOs (tested with DSOS0604)/  
+  - Added basic support for Keysight DSOs (tested with DSOS0604).
   - Added capability for parallel processing of TWM records (very experimental, not properly tested).
   - Minor bug fixes in algorithms (improved performance at some fringe conditions).
   - Added new algorithm TWM-LowZ for low impedance measurements and voltage ratio measurements.
   - Many small fixes and improvements in TWM GUI.
-  - :warning: This version was not properly validated! Although it is being intensively used, there might be some critical bugs.
+  - :warning: This version was not properly validated! Although it is being intensively used, there might be some critical bugs. :warning:
 
 - V1.6.1.0, 2019.04.15:
   - Minor fixes in correction editors.
