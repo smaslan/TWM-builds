@@ -55,7 +55,7 @@ This git contains only builds of the TWM tool, which can be found at another git
 TWM builds are often available in multiple versions. To prevent installation of unnecessary instrument drivers,
 select the version supporting only the digitizers you need.
 
-### version full
+### version `full`
 Supports all digitizers. That is:
 
 - HP/Keysight/Agilent 3458A
@@ -79,6 +79,9 @@ Does not support NI DAQmx digitizers. NI DAQmx driver is not required.
 ### version `visa`
 Does not support NI 5922 and NI DAQmx. Drivers NI Scope and NI DAQmx are not required.
 
+### version `client`
+This is build of LabVIEW library used to controll TWM externally.
+
 ## Downloads
 
 Select version built only with required digitizers support to prevent installing of unnecessary instrument drivers:
@@ -87,6 +90,7 @@ Select version built only with required digitizers support to prevent installing
 - [V1.8.7.0 visa, 2024.10.14 (ZIP file)](./builds/TWM-1.8.7.0-visa.zip)
 - [V1.8.7.0 visa-daqmx, 2024.10.14 (ZIP file)](./builds/TWM-1.8.7.0-visa-daqmx.zip)
 - [V1.8.7.0 visa-niscope, 2024.10.14 (ZIP file)](./builds/TWM-1.8.7.0-visa-niscope.zip)
+- [V1.8.7.0 client, 2024.10.14 (ZIP file)](./builds/TWM-1.8.7.0-client.zip)
 - [V1.7.5.0 (built with: all*), 2022.01.12 (ZIP file)](./builds/TWM-1.7.5.0-full.zip)
 - [V1.6.1.0 (built with: 3458A, NI5922, Soundcard), 2019.04.15 (ZIP file)](./builds/TWM-1.6.1.0-full.zip)
 - [V1.6.1.0 (built with: 3458A, Soundcard), 2019.04.15 (ZIP file)](./builds/TWM-1.6.1.0-visa.zip)
