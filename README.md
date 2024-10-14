@@ -12,6 +12,18 @@ This git contains only builds of the TWM tool, which can be found at another git
 
 
 ## Major changes
+- V1.8.7.0, 2024.10.14:
+  - many fixes
+  - TWM server command for multiplexer virtual channels definition
+  - Fluke8588A now works using USB interface (faster data transfer).
+  - TWM-RATWFFT - simple alg for complex voltage ratio (not validated!)
+  - 3458A sample clock generation by RaS HMF2500 generators
+  - QPMX multiplexer
+  - FFT calculation in TWM if QWTB spectrum not available
+  - waveform viewer allows also viewing per transducers with basic scaling
+  - implemented 3458A Ts step rounding of Ts/fs
+  - Keysight DSO and NI 5922 now has pretrigger option (tested on DSOS604, not tested on 5922)
+  - short correction for TWM-InpZ algorithm
 
 - V1.7.5.0, 2022.01.12:
   - Conversion to LabVIEW 2020.
@@ -39,10 +51,42 @@ This git contains only builds of the TWM tool, which can be found at another git
   - Added new algorithm TWM-PWRFFT for power calculation using FFT for coherent sampling.
   - Digitizer corrections should be usable even for a digitizer with less channels than defined in the correction file as long as identifiers match.
 
+## Build versions
+TWM builds are often available in multiple versions. To prevent installation of unnecessary instrument drivers,
+select the version supporting only the digitizers you need.
+
+### version full
+Supports all digitizers. That is:
+
+- HP/Keysight/Agilent 3458A
+- Fluke 8588A,
+- NI5922,
+- DAQmx,
+- Soundcard (Windows system driver).
+
+This version requires installation of following drivers:
+
+- NI VISA
+- NI Scope
+- NI DAQmx
+
+### version `visa-daqmx`
+Does not support NI 5922. NI Scope driver is not required.
+
+### version `visa-niscope`
+Does not support NI DAQmx digitizers. NI DAQmx driver is not required.
+
+### version `visa`
+Does not support NI 5922 and NI DAQmx. Drivers NI Scope and NI DAQmx are not required.
+
 ## Downloads
 
 Select version built only with required digitizers support to prevent installing of unnecessary instrument drivers:
 
+- [V1.8.7.0 full, 2024.10.14 (ZIP file)](./builds/TWM-1.8.7.0-full.zip)
+- [V1.8.7.0 visa, 2024.10.14 (ZIP file)](./builds/TWM-1.8.7.0-visa.zip)
+- [V1.8.7.0 visa-daqmx, 2024.10.14 (ZIP file)](./builds/TWM-1.8.7.0-visa-daqmx.zip)
+- [V1.8.7.0 visa-niscope, 2024.10.14 (ZIP file)](./builds/TWM-1.8.7.0-visa-niscope.zip)
 - [V1.7.5.0 (built with: all*), 2022.01.12 (ZIP file)](./builds/TWM-1.7.5.0-full.zip)
 - [V1.6.1.0 (built with: 3458A, NI5922, Soundcard), 2019.04.15 (ZIP file)](./builds/TWM-1.6.1.0-full.zip)
 - [V1.6.1.0 (built with: 3458A, Soundcard), 2019.04.15 (ZIP file)](./builds/TWM-1.6.1.0-visa.zip)
