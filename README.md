@@ -8,7 +8,7 @@ TWM is a transparent, metrology grade measurement system for traceable measureme
 - User interface and instrument control in [LabVIEW](http://www.ni.com/labview/),
 - [GNU Octave](https://www.gnu.org/software/octave/) or [Matlab](https://uk.mathworks.com/products/matlab.html) calculation scripts for data processing.
 
-This git contains only builds of the TWM tool, which can be found at another git: [smaslan/TWM](https://github.com/smaslan/TWM) 
+This git contains only builds of the TWM tool, which can be found at another git: [smaslan/TWM](https://github.com/smaslan/TWM)
 
 
 ## Major changes
@@ -55,7 +55,8 @@ This git contains only builds of the TWM tool, which can be found at another git
 TWM builds are often available in multiple versions. To prevent installation of unnecessary instrument drivers,
 select the version supporting only the digitizers you need.
 
-### version full
+### version `full`
+The executable filename is `TWM.exe`.
 Supports all digitizers. That is:
 
 - HP/Keysight/Agilent 3458A
@@ -71,22 +72,28 @@ This version requires installation of following drivers:
 - NI DAQmx
 
 ### version `visa-daqmx`
+The executable filename is `TWM-visa-daqmx.exe`.
 Does not support NI 5922. NI Scope driver is not required.
 
 ### version `visa-niscope`
+The executable filename is `TWM-visa-niScope.exe`.
 Does not support NI DAQmx digitizers. NI DAQmx driver is not required.
 
 ### version `visa`
+The executable filename is `TWM-visa.exe`.
 Does not support NI 5922 and NI DAQmx. Drivers NI Scope and NI DAQmx are not required.
+
+### version `client`
+This is build of LabVIEW library used to controll TWM externally.
 
 ## Downloads
 
 Select version built only with required digitizers support to prevent installing of unnecessary instrument drivers:
 
+- [V1.10.0.0 full, 2024.12.17 (ZIP file)](./builds/TWM-1.10.0.0-full.zip)
+- [V1.10.0.0 client, 2024.12.17 (ZIP file)](./builds/TWM-1.10.0.0-client.zip)
 - [V1.8.7.0 full, 2024.10.14 (ZIP file)](./builds/TWM-1.8.7.0-full.zip)
-- [V1.8.7.0 visa, 2024.10.14 (ZIP file)](./builds/TWM-1.8.7.0-visa.zip)
-- [V1.8.7.0 visa-daqmx, 2024.10.14 (ZIP file)](./builds/TWM-1.8.7.0-visa-daqmx.zip)
-- [V1.8.7.0 visa-niscope, 2024.10.14 (ZIP file)](./builds/TWM-1.8.7.0-visa-niscope.zip)
+- [V1.8.7.0 client, 2024.10.14 (ZIP file)](./builds/TWM-1.8.7.0-client.zip)
 - [V1.7.5.0 (built with: all*), 2022.01.12 (ZIP file)](./builds/TWM-1.7.5.0-full.zip)
 - [V1.6.1.0 (built with: 3458A, NI5922, Soundcard), 2019.04.15 (ZIP file)](./builds/TWM-1.6.1.0-full.zip)
 - [V1.6.1.0 (built with: 3458A, Soundcard), 2019.04.15 (ZIP file)](./builds/TWM-1.6.1.0-visa.zip)
@@ -100,6 +107,4 @@ Select version built only with required digitizers support to prevent installing
 
 
 ## License
-The TWM is distributed under [MIT license](./LICENSE.txt). Note the algorithms in the QWTB toolbox may have different licenses. 
-  
-  
+The TWM is distributed under [MIT license](./LICENSE.txt). Note the algorithms in the QWTB toolbox may have different licenses.
